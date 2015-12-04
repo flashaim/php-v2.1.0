@@ -2,7 +2,7 @@
 
 ### 準備
   **必須要有 LINE Pay 的商家帳戶**  
-    　申請方式請參考官方文件 - [LINE Pay 商家註冊指南](https://pay.line.me/tw/intro/techSupport)  
+      申請方式請參考官方文件 - [LINE Pay 商家註冊指南](https://pay.line.me/tw/intro/techSupport)  
 
   **必須要有通路ID (ChannelId)和通路密鑰 (ChannelSecret)**  
       使用商家帳戶登入 LINE Pay 後台，即可取得通路ID和通路密鑰，兩者都是用來建立 API 請求的 Header
