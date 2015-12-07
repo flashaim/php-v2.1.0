@@ -35,8 +35,8 @@
 * PHP 版本: v5.4 以上
 * LINE Pay API 版本: v2
 * 使用 LINE Pay API 的[事前準備](/README.md)
-* 測試工具原始碼（PHP、HTML 網頁介面）
-* [PHP Library for LINE Pay API] (/LINEPay.php)
+* [測試工具原始碼（PHP、HTML 網頁介面）] (/sample)
+* [PHP Library for LINE Pay API] (/sample/LINEPay.php)
 
 ``` php
 <?php
