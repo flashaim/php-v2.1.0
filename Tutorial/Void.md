@@ -1,5 +1,5 @@
 # LINE Pay 授權作廢
-使用 Void Authorization API 可以將已授權但未付款的交易作廢。呼叫時必須指定 LINE Pay 用戶的付款交易編號(`transactionId`)。
+使用 Void Authorization API 可以將已授權但未付款的交易作廢。呼叫時必須指定 LINE Pay 用戶的付款交易編號（`transactionId`）。
 
 > 若是要已付款的項目，應使用「退款」而非「授權作廢」
 
