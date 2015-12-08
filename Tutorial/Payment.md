@@ -185,7 +185,7 @@ if ($ack->returnCode == "0000") {
   $transactionId = "...";
 
   // 透過建立的 LINEPay 物件，以 Confirm API 要求的交易編碼及參數呼叫同名函式
-  $result = $LinePay->confirm($transactionId, $cArray);
+  $response = $LinePay->confirm($transactionId, $cArray);
 
   $ack = json_decode($response);
 if ($ack->returnCode == "0000") {
