@@ -48,7 +48,7 @@ $response = $LinePay->getAuthDetail($txnIds);
 
 $ack = json_decode($response);
 if ($ack->returnCode == "0000") {
-//  Get Payment Detail 請求成功!
+//  Get Authorization Detail 請求成功!
 }
 ```
 
