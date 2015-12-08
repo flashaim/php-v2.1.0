@@ -13,7 +13,7 @@
 ### 教學文章
 * [使用PHP Library for LINE Pay API (LINEPay.php，使用 php_curl 實作)] (/Tutorial/LibraryUsage.md)
 * [一般付款 (Reserve & Confirm)] (/Tutorial/Payment.md)
-* 付款記錄查詢
+* [付款記錄查詢] (/Tutorial/Get_payment_detail.md)
 * 退款 (Refund)
 * 授權紀錄查詢
 * 授權作廢
