@@ -15,7 +15,7 @@ Required Request Header | `Content-Type:application/json; charset=UTF-8`<br>`X-L
 Sandbox 環境 API 地址 | `https://sandbox-api-pay.line.me/v2/payments`
 Real 環境 API 地址 | `https://api-pay.line.me/v2/payments`
 
-#### GetPayment API 請求的參數  
+#### GetPaymentDetail API 請求的參數  
 
 名稱 | 資料型別 | 說明
 ---- | ------- | ---
@@ -52,7 +52,7 @@ if ($ack->returnCode == "0000") {
 }
 ```
 
-#### GetPayment API 回應 (JSON 格式)
+#### GetPaymentDetail API 回應 (JSON 格式)
 
 ``` php
 {
