@@ -17,4 +17,4 @@
 * [退款 (Refund)] (Tutorial/Refund.md)
 * [授權紀錄查詢] (/Tutorial/Get_auth_detail.md)
 * [授權作廢] (Tutorial/Void.md)
-* 自動付款
+* [自動付款] (Tutorial/Preapproved_payment.md)
