@@ -121,8 +121,8 @@ class LINEPay {
 		echo "Request Header: " . "<pre>" . json_encode($this->headers,JSON_PRETTY_PRINT) . "</pre>";
 		$content = null;
 		if (!empty($data)) {
-			if (!empty($data[productName])) {
-				$data[productName] = urlencode($data[productName]); // 若含中文內容直接json_encode會產生亂碼，先做urlencode轉碼
+			if (!empty($data["productName"])) {
+				$data["productName"] = urlencode($data["productName"]); // 若含中文內容直接json_encode會產生亂碼，先做urlencode轉碼
 				$content = urldecode(json_encode($data, JSON_PRETTY_PRINT)); // json_encode後再用urldecode轉回中文顯示
 			}
 			else {
@@ -137,14 +137,19 @@ class LINEPay {
 	function showResponse($response) {
 		echo "Send Request Url: " . $this->requestUrl . "</br>";
 		$res = json_decode($response);
-		if (gettype($res->info) == 'array') {
-			$res->info[0]->productName = urlencode($res->info[0]->productName); // 中文內容直接json_encode會產生亂碼，先做urlencode轉碼
-			$res = urldecode(json_encode($res, JSON_PRETTY_PRINT)); // json_encode後再用urldecode轉回中文顯示
+		if (isset($res->info)) {
+			if (gettype($res->info) == "array") {
+				$res->info[0]->productName = urlencode($res->info[0]->productName); // 中文內容直接json_encode會產生亂碼，先做urlencode轉碼
+				$res = urldecode(json_encode($res, JSON_PRETTY_PRINT)); // json_encode後再用urldecode轉回中文顯示
+			}
+			else {
+				$res = json_encode($res, JSON_PRETTY_PRINT);
+			}
 		}
 		else {
 			$res = json_encode($res, JSON_PRETTY_PRINT);
 		}
-		
+				
 		echo "Message Return From LINE Pay Server: ". "<pre>" . $res . "</pre>";
 	}
 
