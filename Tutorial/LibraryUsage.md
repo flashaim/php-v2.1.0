@@ -7,7 +7,7 @@
 * [Library 使用-程式碼範例 (以退款為例)](#library-使用-程式碼範例-以退款為例)
 
 ## Library 使用方式
-以下流程是以[**測試用網頁**] (http://www.viktorlin.com/ayung/merchant/)介面為例：
+以下流程是以[**測試用網頁**] (https://trial-tw-pay.line.me/merchant/)介面為例：
 > 在網頁中可以分別對 LINE Pay 的每一支 API 進行呼叫並查看呼叫所使用的內容以及伺服器回傳的內容
 
 #### 角色
