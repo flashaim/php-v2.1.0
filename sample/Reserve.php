@@ -30,7 +30,7 @@ $_SESSION["environ"] = $environ;
 
 $serverName = $_SERVER["SERVER_NAME"];
 $serverPort = $_SERVER["SERVER_PORT"];
-$url = dirname("http://" . $serverName . ":" . $serverPort . $_SERVER["REQUEST_URI"]);
+$url = dirname("https://" . $serverName . ":" . $serverPort . $_SERVER["REQUEST_URI"]);
 // confirmURL  (After confirm payment in LINE Pay will return to this URL)
 $confirmURL = $url . "/Confirm.php";
 // cancelURL  (If cancel payment from LINE Pay checkout page, will return to this URL)
